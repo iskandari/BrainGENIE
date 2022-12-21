@@ -1,3 +1,9 @@
+# -- Set CRAN mirror
+
+r = getOption("repos")
+r["CRAN"] = "http://cran.us.r-project.org"
+options(repos = r)
+
 # -- CRAN packages
 install.packages("data.table")
 install.packages("plyr")
